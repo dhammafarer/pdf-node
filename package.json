@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^9.4.6",
+    "@types/ramda": "^0.25.19",
     "nodemon": "^1.17.1",
     "ts-node": "^5.0.1",
     "typescript": "^2.7.2"
